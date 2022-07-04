@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgba(128, 128, 128, 0.25);
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+::-webkit-scrollbar{
+    
+    stroke-width: 1rem;
+    scroll-behavior: smooth;}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    color: #c4112f;
+    background-color: #c4112f;
+}
+
+
+div.navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    
+}
+img.nav-logo{
+    width: 10rem;
+    
+}
+ul.nav-items{
+    padding-top: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+ul.nav-items li a{
+    text-decoration: none;
+    color: #c4112f;
+    font-weight: 600;
+    letter-spacing: .08rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+ul.nav-items li a:hover{
+    font-size: 1.25rem;
+    color: red;
+}
+div.navbar-collapse-icon{
+    padding-top: 1rem;
+
+}
+i.navbar-collapse-icon{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+@media only screen and (max-width:772px){
+    div.navbar{
+        padding-right: 1rem;
+        
+       
+    }
+    div.nav-items{
+        display: none;
+    }
+}
+@media only screen and (min-width:772px){
+    div.navbar-collapse-icon{
+        display: none;
+    }
+    div.nav-items{
+        display: inline;
+    }
+    div.navbar{
+        top: 0px;
+        position: sticky;
+    }
+    
+}
+div.text{
+    padding: 10rem 10vw;
+    font-weight: 600;
+    font-size: 1.25rem;
+}

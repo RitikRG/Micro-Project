@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgba(128, 128, 128, 0.404);
+    margin: 0;
+    padding: 0%;
+    font-family: 'Quicksand', sans-serif;
+
+}
+:root{
+    --main-color: rgb(255, 20, 114);
+    --secondary-color: rgba(128, 128, 128, 0.404);
+}
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 1rem;
+    background-color: var(--secondary-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--secondary-color);
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+h1{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.main-btn{
+    border-radius: 8px;
+    background-color: var(--main-color);
+    border: solid;
+    border-color: var(--main-color);
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    
+}
+section#info h1{
+    margin-left: 5vw;
+}
+div.text{
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+div.connect-links{
+    padding: 1vw 20vw;
+}
+div.connect-links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+div.connect-links ul li a{
+    font-size: 2rem;
+    
+}
+div.connect-links ul li a#linkedin{
+    color: rgb(65, 65, 249);
+}
+div.connect-links ul li a#github{
+    color: #000;
+}
+div.connect-links ul li a#instagram{
+    color: rgb(242, 82, 221);
+}
+div.connect-links ul li a:hover{
+    font-size: 2.5rem;
+}
+section#projects{
+    padding: 2vw 5vw;
+}
+ul.micro-project-list{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: None;
+}
