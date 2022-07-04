@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0%;
+    font-family: 'Quicksand';
+}
+:root{
+    --white: whitesmoke;
+    --primary-color: #fa5c62;
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+}
+h1{
+    font-size: 3.5rem;
+}
+p{
+    font-size: 1.25rem;
+    font-weight: 550;
+}
+a{
+    font-family: 'Quicksand';
+}
+.main-btn{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.09rem;
+    font-weight: 510;
+    font-size: 'Quicksand';
+    border-radius: 6px;
+    padding: .25rem .35rem;
+    position: absolute;
+}
+.main-btn:hover{
+    animation: btn-load 1s ease-in forwards;
+}
+@keyframes btn-load{
+    from{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 17% 0, 50% 100%, 0% 100%);
+
+
+    }
+}
+.background-btn{
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--primary-color);
+    font-size: 1.09rem;
+    font-weight: 510;
+    font-size: 'Quicksand';
+    border-radius: 6px;
+    padding: .25rem .35rem;
+}
+div.wrapper{
+    background-image: url(../images/Background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    
+}
+div.logo{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+span.logo img{
+    width: 8rem;
+}
+div.content{
+    display: flex;
+    padding-top: 8vh;
+    padding-left: 2rem;
+    width: 60vw;
+    color: var(--white);
+    position: absolute;
+
+}
+div.content ul.text{
+    list-style-type: none;
+}
+div.info-text{
+    width: 40vw;
+}
+@media only screen and (max-width:425px){
+    div.host-button{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width:550px){
+    div.info-text p{
+        font-size: 5vw!important;
+    }
+}
+@media only screen and (max-width:740px){
+    span.logo img{
+        width: 20vw;
+    }
+    div.content{
+        padding-top:2px ;
+        width: 80vw;
+    }
+    div.content ul.text{
+        padding-left: 1rem;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    div.info-text{
+        display: inline;
+    }
+    div.info-text p{
+        font-size: 3vw;
+    }
+
+}
+@media only screen and (min-width:740px) and (max-width:996px){
+    div.content{
+        width: 90vw;
+        padding-top: 1rem;
+        
+    }
+    
+}
