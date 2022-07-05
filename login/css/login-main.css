@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Quicksand';
+    margin: 0%;
+}
+h2{
+    font-size: 3vw;
+    margin: 0%;
+    color: var(--head-text);
+
+}
+h4{
+    margin: 0%;
+}
+h5{
+    margin: 2px 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--head-text);
+}
+a:hover{
+    color: var(--primary-color);
+}
+:root{
+    --background-opacity-color: rgba(0, 0, 0, 0.421);
+    --head-text:whitesmoke;
+    --primary-color: #fa5c62;
+    --bg-grey: rgba(220, 219, 219, 0.823);
+}
+.main-btn{
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    border-color: var(--primary-color);
+    color: var(--head-text);
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.main-btn:hover{
+    background-color: var(--background-opacity-color);
+    
+}
+
+div.wrapper{
+    background-image: url(https://images.pexels.com/photos/32870/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin: 0%;
+}
+div.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: var(--background-opacity-color);
+    gap: .5rem;
+}
+
+div.header h2{
+    align-items: center;
+}
+img.logo{
+    width: 3rem;
+}
+div.option-gh{
+    padding: 0px 4vw;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 45%;
+}
+div.pop-up-container{
+    display: flex;
+    justify-content: space-around;
+}
+div.pop-ups{
+    background-color: var(--bg-grey);
+    width: 195px;
+    padding-top: 0%;
+    padding-bottom: 0rem;
+    position: absolute;
+    top: 25%;
+    border-radius: 6px;
+    
+}
+div.pop-up-header{
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+div.login-as-guest, div.login-as-host{
+    
+    width: 50px;
+    display: grid;
+}
+div.login-as-guest form{
+    padding: 12px;
+    
+}
+div.login-as-host form{
+    padding: 12px;
+    
+}
+div.login-as-guest form input{
+    border-radius: 4px;
+    border-color: var(--bg-grey);
+    margin-bottom: 4px;
+    line-height: 1.25rem;
+}
+    
+
+@media only screen and (max-width:615px){
+    div.option-gh{
+        top: 38%;
+    }
+}
+@media only screen and (max-width:772px){
+    div.header{
+        display: grid;
+        padding: 0 1.5rem;
+    }
+    div.header h2{
+        font-size: 2rem;
+
+    }
+    img.logo{
+        margin-left: 15rem;
+        position: absolute;
+        top:3px
+    }
+   
+}
