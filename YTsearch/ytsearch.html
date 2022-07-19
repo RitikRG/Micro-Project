@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTsearch</title>
+</head>
+<body>
+    <h2>Hijacking searches</h2>
+    <h3>Youtube Search</h3>
+    <form action="https://www.youtube.com/results?search_query">
+        <input type="text" placeholder="Search on YT" name="search_query">
+        <button type="submit">submit</button>
+        <hr>
+    </form>
+    <h3>Reddit search</h3>
+    <form action="https://www.reddit.com/search/?q=">
+        <input type="text" placeholder="Search on Reddit" >
+        <button type="submit">Submit</button>
+    </form>
+    <h3>Using checkboxes </h3>
+    <form >
+        <input type="checkbox" name="agree" id="agree" checked>
+        <label for="agree">Agree to the terms and conditions</label><br>
+        
+        <input type="checkbox" name="noti" id="noti" >
+        <label for="noti">Recieve exciting offers and deals from our side?</label><br>
+
+        <button>Go ahead</button>
+    </form>
+    <h3>Using Radio buttons</h3>
+    <form>
+        <ul>
+            <li><input type="radio" name="meal_type" id="veg" value="veg"><label for="veg">Vegeterian meal</label></li>
+            <li><input type="radio" name="meal_type" id="non-veg" value="non-veg"><label for="non-veg">Non-Vegeterian meal</label></li>
+            <li><input type="radio" name="meal_type" id="fast" value="fast"><label for="fast">You are fasting</label></li>
+            <li><button>Submit</button></li>
+        </ul>
+        <h3>Dropdown Selection</h3>
+        <label for="pet">Choose your favourite pet:</label>
+        <select name="pet" id="pet">
+            <option value="">--Please select your favourite pet--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="lion">Lion</option>
+            <option value="bear">Bear</option>
+            <option value="leopard">Leopard</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <h3>Using Range Input</h3>
+    <form >
+        <label for="volume_level">Select your cabin's music volume level:</label>
+        <input type="range" min="0" max="100" step="2" value="60" name="volume_level" id="volume_level"><br>
+        <label for="email">Enter your email address</label>
+        <input type="email" required><br>
+        <label for="url">Enter your website url</label>
+        <input type="url" name="url" id="url" required><br>
+        <label for="cheese_level">Select your food's cheese level:</label>
+        <input type="range" min="0" max="100" step="2" value="40" name="cheese_level" id="cheese_level"><br>
+        <label for="age">Enter your age</label>
+        <input type="number" id="age" min="18" max="65"><br>
+        <label for="story">Tell us why you chose us:</label><br>
+        <textarea name="story" id="story" cols="30" rows="10" minlength='10'  maxlength="250" required placeholder="Max:250 characters" required></textarea><br>
+        
+        <button>Submit</button>
+    </form>
+</body>
+</html>
