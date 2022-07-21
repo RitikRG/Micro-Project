@@ -78,9 +78,11 @@ div.connect-links ul li a:hover{
 }
 section#projects{
     padding: 2vw 5vw;
+    border: 2px solid var(--main-color);
 }
 ul.micro-project-list{
     display: flex;
     justify-content: space-around;
     list-style-type: None;
+    margin-bottom: 40px;
 }
