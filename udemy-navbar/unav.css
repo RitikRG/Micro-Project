@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,300&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    font-size: 2em;
+    color: #353535;
+}
+ul{
+    flex:1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #3c6e71;
+}
+ul li a:hover{
+    color: #284b63;
+    font-size: 1.25em;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #3c6e71;
+}
+div.h2{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+}
+span{
+    display: none;
+}
+h2{
+    font-size: 5em;
+}
+@media(max-width:1072px){
+    h2{
+        font-size: 4em;
+    }
+}
+@media(max-width:780px){
+    h2{
+        font-size: 3em;
+    }
+}
+@media(max-width:584px){
+    h2{
+        font-size: 2em;
+    }
+}
+@media(max-width:388px){
+    h2{
+        font-size: 2.5em;
+    }
+}
+@media(max-width:320px){
+    h2{
+        font-size: 2.25em;
+    }
+}
+@media(max-width:500px){
+    span{
+        display: inline;
+    }
+    ul{
+        display: none;
+    }
+    a{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+}
